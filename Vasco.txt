@@ -1,6 +1,3 @@
 Vasco Da Gama
-<<<<<<< HEAD
 Trem bala da colina
-=======
 Gigante da Colina
->>>>>>> 0d5e2b4221234d91539945d882b44da314393aef
