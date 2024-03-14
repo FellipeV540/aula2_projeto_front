@@ -1,0 +1,18 @@
+from socket import socket, AF_INET, SOCK_STREAM
+
+server_name = 'localhost'
+server_port = 12005
+
+client_socket = socket(AF_INET, SOCK_STREAM)
+client_socket.connect((server_name, server_port))
+
+msg = input('Entre minúsculas \n')
+
+client_socket.send(msg.encode())
+
+msg_modificada = client_socket.recv(1024)
+
+print(msg_modificada.decode())
+print(client_socket)
+
+client_socket.close()
